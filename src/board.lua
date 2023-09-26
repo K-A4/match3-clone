@@ -297,7 +297,7 @@ function Board:new()
 
     function public:toString()
         local str = "  "
-        for i=0,9 do
+        for i = 0, self.xDim-1 do
             str = str.." "..i
         end
         str = str.."\n"
